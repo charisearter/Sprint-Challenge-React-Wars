@@ -6,7 +6,7 @@ import Character from './components/Character'
 import StyledDiv from './components/StyledDiv'
 
 const App = () => {
-  const [data, setData] = useState('');
+  const [data, setData] = useState([]);
     useEffect(() => {
         axios
         .get('https://rickandmortyapi.com/api/character/')
@@ -16,13 +16,14 @@ const App = () => {
             setData(theCharacterList);
         })//end then
     },[]);//end useEffect
-  const [ characterData ]= useState(theCharacterList)
+  
   return (
     
     <div className="App">
-      {characterData.map((character, id) => <Character key = {id} name = {character} />)}
-      <h1 className="Header">Characters</h1>
-      <Character data = {data}/>
+       <h1 className="Header">Characters</h1>
+      {data.map((data, id) => <Character key = {id} data = {data} />)}
+     
+      
     </div>
   );
 }

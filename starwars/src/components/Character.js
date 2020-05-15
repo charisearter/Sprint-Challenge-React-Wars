@@ -18,7 +18,7 @@ function Character (props) {
             <StyledP>Species: {props.data.species}</StyledP>
             <StyledP>Type:{props.data.type}</StyledP>
             <StyledP>Gender:{props.data.gender}</StyledP>
-            <StyledP>Has appeared in {props.data.episode} episode(s)</StyledP>
+            <StyledP>Has appeared in {props.data.episode.length} episode(s)</StyledP>
 
         </StyledDiv>
     )
