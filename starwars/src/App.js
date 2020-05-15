@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios' //importing axios
-import styled from 'styled-components'
+
 import Character from './components/Character'
 
 
@@ -23,7 +23,7 @@ const App = () => {
        <h1 className="Header">Characters</h1>
       {data.map((data, id) => <Character key = {id} data = {data} />)}
      
-      
+      <button>Prev</button><button>Next</button>
     </div>
   );
 }

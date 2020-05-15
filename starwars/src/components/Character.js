@@ -1,6 +1,6 @@
 // Write your Character component here
 import React from 'react';
-import styled from 'styled-components'
+
 import StyledDiv from './StyledDiv'
 import StyledH1 from './StyledH1'
 import StyledH2 from './StyledH2'
