@@ -1,21 +1,26 @@
 // Write your Character component here
 import React from 'react';
-
-
+import styled from 'styled-components'
+import StyledDiv from './StyledDiv'
+import StyledH1 from './StyledH1'
+import StyledH2 from './StyledH2'
+import StyledP from './StyledP'
+import StyledImg from './StyledImg'
 
 function Character (props) {
+    
     return (
         
-        <div>
-            <img src={props.data.image} alt={props.data.name}/>
-            <h1>Name: {props.data.name}</h1>
-            <h2>Status: {props.data.status}</h2>
-            <p>Species: {props.data.species}</p>
-            <p>Type:{props.data.type}</p>
-            <p>Gender:{props.data.gender}</p>
-            <p>Has appeared in {props.data.episode.length()} episode(s)</p>
+        <StyledDiv>
+            <StyledImg src={props.data.image} alt={props.data.name}/>
+            <StyledH1>Name: {props.data.name}</StyledH1>
+            <StyledH2>Status: {props.data.status}</StyledH2>
+            <StyledP>Species: {props.data.species}</StyledP>
+            <StyledP>Type:{props.data.type}</StyledP>
+            <StyledP>Gender:{props.data.gender}</StyledP>
+            <StyledP>Has appeared in {props.data.episode} episode(s)</StyledP>
 
-        </div>
+        </StyledDiv>
     )
 }
 

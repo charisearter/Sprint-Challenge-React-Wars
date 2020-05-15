@@ -1,0 +1,10 @@
+import React from 'react';
+import styled from 'styled-components'
+
+const StyledImg = styled.img `
+    width: 50%;
+    border-radius: 25px;
+    margin: 1% auto;
+`;
+
+export default StyledImg;
