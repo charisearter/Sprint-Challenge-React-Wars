@@ -3,7 +3,7 @@ import React from 'react';
 
 import StyledDiv from './StyledDiv'
 import StyledH1 from './StyledH1'
-import StyledH2 from './StyledH2'
+import StyledH2 from './StyledH2';
 import StyledP from './StyledP'
 import StyledImg from './StyledImg'
 
