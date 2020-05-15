@@ -3,7 +3,7 @@ import './App.css';
 import axios from 'axios' //importing axios
 import styled from 'styled-components'
 import Character from './components/Character'
-import StyledDiv from './components/StyledDiv'
+
 
 const App = () => {
   const [data, setData] = useState([]);

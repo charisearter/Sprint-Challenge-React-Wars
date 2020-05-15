@@ -16,8 +16,9 @@ function Character (props) {
             <StyledH1>Name: {props.data.name}</StyledH1>
             <StyledH2>Status: {props.data.status}</StyledH2>
             <StyledP>Species: {props.data.species}</StyledP>
-            <StyledP>Type:{props.data.type}</StyledP>
-            <StyledP>Gender:{props.data.gender}</StyledP>
+            <StyledP>Origin: {props.data.origin.name}</StyledP>
+            <StyledP>Location: {props.data.location.name}</StyledP>
+            <StyledP>Gender: {props.data.gender}</StyledP>
             <StyledP>Has appeared in {props.data.episode.length} episode(s)</StyledP>
 
         </StyledDiv>
